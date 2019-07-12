@@ -1,4 +1,4 @@
-Multi Vector
+Subvector
 ==============
 
 A simple data structure to manage multiple linear vectors at arbitrary lengths
@@ -16,7 +16,7 @@ This package provides a simple data structure to create any vector sequence at a
 ### Code Demo
 
 ```js
-const Vector = require('multi-vector');
+const Vector = require('subvector');
 
 const v = Vector();
 for (let count=1; count<=5000; count++) {
