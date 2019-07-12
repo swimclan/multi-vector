@@ -1,0 +1,21 @@
+{
+  "name": "multi-vector",
+  "version": "0.0.1",
+  "description": "A simple data structure to manage multiple linear vectors at arbitrary lengths",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "vector",
+    "moving",
+    "average",
+    "period"
+  ],
+  "author": "Matthew Herron",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
