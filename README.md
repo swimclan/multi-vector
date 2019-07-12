@@ -37,7 +37,7 @@ console.log(v.get(10));
 ### Download & Installation
 
 ```shell 
-$ npm i multi-vector 
+$ npm i subvector
 ```
 
 ### Contributing
