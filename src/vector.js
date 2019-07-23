@@ -18,6 +18,9 @@ module.exports = function Vector() {
         }
       });
       return ret;
+    },
+    get length() {
+      return length;
     }
   }
 }

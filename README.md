@@ -27,10 +27,12 @@ for (let count=1; count<=5000; count++) {
 console.log(v.get(3));
 console.log(v.get(5));
 console.log(v.get(10));
+console.log(v.length);
 
 // [89, 90, 13]
 // [67, 78, 89, 90, 13]
 // [12, 23, 34, 45, 56, 67, 78, 89, 90, 13]
+// 5000
 
 ```
 
