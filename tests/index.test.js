@@ -43,4 +43,22 @@ describe('Vector()', () => {
     expect(v.get(2)).toEqual([34, 45]);
     expect(v.get(1)).toEqual([45]);
   });
+
+  test('It will return a length property equal to the length of the entire vector', () => {
+    v.add(1);
+    v.add(2);
+    expect(v.length).toEqual(2);
+    v.add(3);
+    v.add(4);
+    expect(v.length).toEqual(4);
+  });
+
+  test('It will return the value a a specific place in the vector', () => {
+    v.add(1);
+    v.add(2);
+    v.add(3);
+    v.add(4);
+    expect(v.at(4)).toEqual(4);
+    expect(v.at(1)).toEqual(1);
+  });
 });

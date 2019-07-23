@@ -19,6 +19,9 @@ module.exports = function Vector() {
       });
       return ret;
     },
+    at(period) {
+      return nodes[period - 1].value;
+    },
     get length() {
       return length;
     }
