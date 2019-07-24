@@ -61,4 +61,18 @@ describe('Vector()', () => {
     expect(v.at(4)).toEqual(4);
     expect(v.at(1)).toEqual(1);
   });
+
+  test('It will iterate with a predicate function over each node in the vector', () => {
+    const fn = jest.fn();
+    v.add(1);
+    v.add(2);
+    v.add(3);
+    v.add(4);
+    v.each(fn);
+    expect(fn).toHaveBeenCalledTimes(4);
+    expect(fn).toHaveBeenNthCalledWith(1, 1, 1);
+    expect(fn).toHaveBeenNthCalledWith(2, 2, 2);
+    expect(fn).toHaveBeenNthCalledWith(3, 3, 3);
+    expect(fn).toHaveBeenNthCalledWith(4, 4, 4);
+  });
 });

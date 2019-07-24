@@ -34,6 +34,15 @@ console.log(v.length);
 // 5000
 console.log(v.at(5000));
 // 13
+v.each((value, position) => {
+  console.log(value, position);
+});
+// ...
+// 67 4996
+// 78 4997
+// 89 4998
+// 90 4999
+// 13 5000
 ```
 
 ### Download & Installation

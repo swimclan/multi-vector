@@ -22,6 +22,11 @@ module.exports = function Vector() {
     at(period) {
       return nodes[period - 1].value;
     },
+    each(cb) {
+      Object.entries(nodes).forEach(([index, node]) => {
+        cb(node.value, +index + 1);
+      });
+    },
     get length() {
       return length;
     }

@@ -1,6 +1,6 @@
 {
   "name": "subvector",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple data structure to manage multiple linear vectors at arbitrary lengths",
   "main": "index.js",
   "scripts": {
